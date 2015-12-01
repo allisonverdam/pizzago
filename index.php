@@ -16,7 +16,7 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- fim JS -->
   </head>
-  <a name="top" id="top"></a>
+  <a name="top" class="top"></a>
   <body  data-spy="scroll" data-target="#my-navbar">
 
     <!-- Inicio Nav Menu -->
@@ -27,7 +27,7 @@
       <!--Inicio Carrosel-->
     <section class="carousel slide" ><!-- Início da Section-->
 
-      <div id="carousel-magico" class="carousel slide" data-ride="carousel">
+      <div class="carousel-magico" class="carousel slide" data-ride="carousel">
         <!-- Indicadores -->
         <ol class="carousel-indicators">
           <li data-target="#carousel" data-slide-to="0" class="active"></li>
@@ -75,10 +75,10 @@
 
 
 
-<section id="combo">
+<section class="combo">
 
 <div class="container">
-            <div class="page-header" id="features">
+            <div class="page-header" class="features">
 
           <h1><hr>COMBOS<hr></h1>
         </div>
@@ -88,18 +88,18 @@
             <div class="panel panel-default text-center">
               <div class="panel-body">
                 <span class="glyphicon">
-                  <p id="combo1">Combo 1</p></span>
+                  <p class="combo1">Combo 1</p></span>
                 <hr style="margin-top: 0px;" width: 30%;>
 
-                <h4 id="pizza">1 Pizza Média</h4>
-                <h4 id="refri">+ Refri</h4>
-                <h4 id="pessoa">2 Pessoas</h4></p>
-                <section id="precototal">
+                <h4 class="pizza">1 Pizza Média</h4>
+                <h4 class="refri">+ Refri</h4>
+                <h4 class="pessoa">2 Pessoas</h4></p>
+                <section class="precototal">
                 <p>
-                <p id="preco1"> 29 </p>
-                <p id="preco2">90</p>
+                <p class="preco1"> 29 </p>
+                <p class="preco2">90</p>
               </p>
-                <p id="cifrao">R$</p>
+                <p class="cifrao">R$</p>
                 </section>
                 <a href="Cardapio.html"> <button style="font-family:Nexa-Bold" type="button" class="btn btn-primary" title="Comprar combo 1 - 1 Pizza Média mais refrigerante para 2 pessoas, 29 e 90 reais">COMPRAR</button></a>
 
@@ -111,20 +111,20 @@
           <div class="col-sm-4">
             <div class="panel panel-default text-center">
               <div class="panel-body">
-                <span class="glyphicon"><p id="combo1">Combo 2</p></span>
+                <span class="glyphicon"><p class="combo1">Combo 2</p></span>
                 <hr style="margin-top: 0px;" width: 30%;>
                 <h1 class="oculto"></h1>
                 <h2 class="oculto"></h2>
                 <h3 class="oculto"></h3>
-                <h4 id="pizza">1 Pizza Grande</h4>
-                <h4 id="refri">+ Refri</h4>
-                <h4 id="pessoa">3 Pessoas</h4></p>
-                <section id="precototal">
+                <h4 class="pizza">1 Pizza Grande</h4>
+                <h4 class="refri">+ Refri</h4>
+                <h4 class="pessoa">3 Pessoas</h4></p>
+                <section class="precototal">
                 <p>
-                <p id="preco1"> 41 </p>
-                <p id="preco2">90</p>
+                <p class="preco1"> 41 </p>
+                <p class="preco2">90</p>
               </p>
-                <p id="cifrao">R$</p>
+                <p class="cifrao">R$</p>
                 </section>
                 <a href="Cardapio.html"> <button style="font-family:Nexa-Bold"type="button" class="btn btn-primary"title="Comprar combo 2 - 1 Pizza Grande mais refrigerante para 3 pessoas, 41 e 90 reais">COMPRAR</button></a>
 
@@ -135,20 +135,18 @@
           <div class="col-sm-4">
             <div class="panel panel-default text-center">
               <div class="panel-body">
-                <span class="glyphicon"><p id="combo1">Combo 3</p></span>
+                <span class="glyphicon"><p class="combo1">Combo 3</p></span>
                 <hr style="margin-top: 0px;" width: 30%;>
 
-                <h4 id="pizza">1 Pizza Gigante</h4>
-                <h4 id="refri">+ Refri</h4>
-                <h4 id="pessoa">4 Pessoas</h4></p>
-                <section id="precototal">
-                <p>
-                <p id="preco1"> 49 </p>
-                <p id="preco2">90</p>
-              </p>
-                <p id="cifrao">R$</p>
+                <h4 class="pizza">1 Pizza Gigante</h4>
+                <h4 class="refri">+ Refri</h4>
+                <h4 class="pessoa">4 Pessoas</h4></p>
+                <section class="precototal">
+                <p class="preco1"> 49 </p>
+                <p class="preco2">90</p>
+                <p class="cifrao">R$</p>
                 </section>
-                <a href="Cardapio.html"> <button style="font-family:Nexa-Bold"type="button" class="btn btn-primary" title="Comprar combo 3 - 1 Pizza Gigante mais refrigerante para 4 pessoas, 49 e 90 reais">COMPRAR</button></a>
+                <button style="font-family:Nexa-Bold" type="button" class="btn btn-primary" title="Comprar combo 3 - 1 Pizza Gigante mais refrigerante para 4 pessoas, 49 e 90 reais"><a href="Cardapio.html">COMPRAR</a></button>
 
               </div>
             </div>
@@ -160,22 +158,20 @@
 
     </section>
 
-
-<section id="rodape">
   <footer>
 
         <div class="container text-center">
-        <p id="email">Receber ofertas pelo email</p>
+        <p class="email">Receber ofertas pelo email</p>
         <p>Digite seu nome e email</p>
 
-        <form action="" class="form-inline">
+        <form action="#" class="form-inline" method="POST">
           <div class="form-group">
             <label for="subscription">Nome</label>
-            <input type="text" class="form-control" id="subscription" label=""placeholder="Seu nome">
+            <input type="text" class="form-control" class="subscription" placeholder="Seu nome">
           </div>
           <div class="form-group">
             <label for="email">Email</label>
-            <input type="text" class="form-control" id="email" placeholder="Digite seu email">
+            <input type="text" class="form-control" class="email" placeholder="Digite seu email">
           </div>
           <button type="submit" class="btn btn-default">Enviar</button>
 
@@ -194,7 +190,6 @@
 
 
     </footer>
-</section>
   </body>
 
 </html>
